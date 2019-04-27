@@ -30,8 +30,8 @@
 namespace HsvConverter
 {
     /// \brief Get the RGB values from hue, saturation and value.
-    /// \param hue          The hue of the color. The hue goes from 0 to 1529, 0 beeing 0 degrees and 1529 beeing 359.764 degrees.
-    ///                     This means that each slice of 60 degrees have 255 values.
+    /// \param hue          The hue of the color. The hue goes from 0 to 1529, 0 beeing 0 degrees and 1529 beeing 359.764... degrees.
+    ///                     This means that each slice of 60 degrees has 255 values.
     /// \param saturation   The saturation of the color. The saturation goes from 0 to 255, 0 beeing 0% and 255 beeing 100%.
     /// \param value        The value of the color. The value goes from 0 to 255, 0 beeing 0% and 255 beeing 100%.
     /// \param [out] red    The variable in which the red value will be written.
@@ -39,10 +39,10 @@ namespace HsvConverter
     /// \param [out] blue   The variable in which the blue value will be written.
     void getRgbFromHSV(uint16_t hue, uint8_t saturation, uint8_t value,
                        uint8_t& red, uint8_t& green, uint8_t& blue);
-    
+
     /// \brief Get the color from hue, saturation and value.
-    /// \param hue          The hue of the color. The hue goes from 0 to 1529, 0 beeing 0 degrees and 1529 beeing 359.764 degrees.
-    ///                     This means that each slice of 60 degrees have 255 values.
+    /// \param hue          The hue of the color. The hue goes from 0 to 1529, 0 beeing 0 degrees and 1529 beeing 359.764... degrees.
+    ///                     This means that each slice of 60 degrees has 255 values.
     /// \param saturation   The saturation of the color. The saturation goes from 0 to 255, 0 beeing 0% and 255 beeing 100%.
     /// \param value        The value of the color. The value goes from 0 to 255, 0 beeing 0% and 255 beeing 100%.
     /// \return The concatenated RGB values organised like so: 0#R#G#B, where each component is 8 bits.
